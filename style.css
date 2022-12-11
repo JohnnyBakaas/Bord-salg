@@ -1,3 +1,15 @@
 .bilde {
   width: 90%;
 }
+
+.mainPictureButton {
+  margin: 10px;
+  width: 10%;
+  height: 100%;
+}
+
+.mainImage {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
