@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <h1>Telemark Interior</h1>
+
+      <article>
+        <h2>Hvordan bestille</h2>
+
+        <p>
+          Forklar hviken størelse du ønsker på lik måte som vises i eksempelet
+        </p>
+
+        <p>
+          Forklar hvilken farge du ønsker, du kan legge ved oss bilde, farge
+          eller RGB kode
+        </p>
+
+        <div onchange="output()">
+          <div
+            id="rgbRep"
+            style="
+              height: 200px;
+              width: 200px;
+              background-color: rgb(185, 131, 131);
+            "
+          ></div>
+          <div class="rgbSlider">
+            <input
+              type="range"
+              min="0"
+              max="255"
+              value="10"
+              class="slider"
+              id="myRangeRed"
+            />
+            <p>Rød</p>
+          </div>
+          <div class="rgbSlider">
+            <input
+              type="range"
+              min="0"
+              max="255"
+              value="10"
+              class="slider"
+              id="myRangeGren"
+            />
+            <p>Grønn</p>
+          </div>
+          <div class="rgbSlider">
+            <input
+              type="range"
+              min="0"
+              max="255"
+              value="10"
+              class="slider"
+              id="myRangeBlue"
+            />
+            <p>Blå</p>
+          </div>
+          <div class="rgbCode">
+            <p>RGB kode:</p>
+            <p id="rgbOut">10, 10, 10</p>
+          </div>
+        </div>
+
+        <p>
+          Hvis du ønsker hyller tilbyer vi også det, men det krever at du legger
+          ved bilde eller tegninger og mål på hyllen
+        </p>
+
+        <p>
+          Det var det, send all infromasjonen (gjerne mer hvis du tror vi
+          trenger det) til oss på Johnny@Bakaas-cadconsult.no, så tar vi kontakt
+          med deg så fort skissene er ferdige så du kan se over de før den blir
+          produser og sendt hjem til deg
+        </p>
+
+        <p>Takk for at viser interesse i oss og våre produkter</p>
+
+        <p>
+          For nå går alle bestillinger over epost, vi jobber med å gjøre
+          bestillings prosessen raskere.
+        </p>
+      </article>
+    </section>
+
+    <script src="rgbPicker.js" async defer></script>
+  </body>
+</html>

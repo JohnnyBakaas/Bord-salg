@@ -13,3 +13,13 @@
   align-items: center;
   justify-content: space-around;
 }
+
+.rgbSlider {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.rgbCode {
+  display: flex;
+}

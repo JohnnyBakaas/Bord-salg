@@ -10,19 +10,31 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Telemark Interior</h1>
+    <section>
+      <h1>Telemark Interior</h1>
 
-    <div class="mainImage">
-      <button class="mainPictureButton" onclick="changeMainPicture(-1)">&#60</button>
-      <div id="mainImage">
-        <img src="img/Bord.png" alt="" class="bilde"/>
+      <div class="mainImage">
+        <button class="mainPictureButton" onclick="changeMainPicture(-1)">
+          &#60;
+        </button>
+        <div id="mainImage">
+          <img src="img/Bord.png" alt="" class="bilde" />
+        </div>
+        <button class="mainPictureButton" onclick="changeMainPicture(1)">
+          &#62;
+        </button>
       </div>
-      <button class="mainPictureButton" onclick="changeMainPicture(1)">&#62</button>
-    </div>
 
-    <p>Side under utbygging</p>
-    <p>Design og produksjon av skreddersydde møbler</p>
-    <p>Ta knotakt: Johnny@Bakaas-cadconsult.no</p>
+      <article>
+        <h2>Design av spesial produserte møbler i moderne stil</h2>
+        <a href="https://telemarkinterior.no/bestill"
+          >Start bestillings prosessen her</a
+        >
+      </article>
+
+      <a href="https://telemarkinterior.no/faq">Hvis det er noe du lurer på</a>
+      <p>Side under utbygging</p>
+    </section>
     <script src="main.js" async defer></script>
   </body>
 </html>
