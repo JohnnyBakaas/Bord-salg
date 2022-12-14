@@ -9,6 +9,14 @@
   font-family: "Lato", sans-serif;
 }
 
+h1 {
+  user-select: none;
+}
+
+button {
+  user-select: none;
+}
+
 p {
   font-size: 17px;
 }
@@ -18,18 +26,20 @@ img {
 }
 
 .bilde {
-  width: 90%;
+  width: 100%;
 }
 
 .mainPictureButton {
   margin: 10px;
   width: 10%;
-  height: 100%;
+  background-color: white;
+  border: 0;
+  font-size: 50px;
 }
 
 .mainImage {
+  margin: auto;
   display: flex;
-  align-items: center;
   justify-content: space-around;
 }
 
@@ -41,4 +51,16 @@ img {
 
 .rgbCode {
   display: flex;
+}
+
+.conteiner {
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (min-width: 1000px) {
+  .conteiner {
+    width: 80%;
+    margin: auto;
+  }
 }
