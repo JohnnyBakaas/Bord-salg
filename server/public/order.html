@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <section>
+      <h2>Farge</h2>
+      <div oninput="output()">
+        <div
+          id="rgbRep"
+          style="height: 200px; width: 200px; background-color: rgb(10, 10, 10)"
+        ></div>
+        <div class="rgbSlider">
+          <input
+            type="range"
+            min="0"
+            max="255"
+            value="10"
+            class="slider"
+            id="myRangeRed"
+          />
+          <label for="myRangeRed">Rød</label>
+        </div>
+        <div class="rgbSlider">
+          <input
+            type="range"
+            min="0"
+            max="255"
+            value="10"
+            class="slider"
+            id="myRangeGren"
+          />
+          <label for="myRangeGren">Grønn</label>
+        </div>
+        <div class="rgbSlider">
+          <input
+            type="range"
+            min="0"
+            max="255"
+            value="10"
+            class="slider"
+            id="myRangeBlue"
+          />
+          <label for="myRangeBlue">Blå</label>
+        </div>
+        <div class="rgbCode">
+          <p>RGB kode:</p>
+          <p id="rgbOut">10, 10, 10</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Dimensjoner</h2>
+      <p>Vendligst oppgi mål i cm</p>
+      <input type="text" id="width" /> <label for="width">bredde</label> <br />
+      <input type="text" id="dept" /> <label for="dept">dybde</label> <br />
+      <input type="text" id="hight" /> <label for="hight">høyde</label> <br />
+    </section>
+
+    <section>
+      <h2>Personlig informasjon</h2>
+      <input type="text" id="firstName" />
+      <label for="firstName">Fornavn</label> <br />
+      <input type="text" id="midleName" />
+      <label for="midleName">Mellomnavn</label> <br />
+      <input type="text" id="lastName" />
+      <label for="lastName">Etternavn</label> <br />
+      <input type="text" id="email" />
+      <label for="email">Epost</label> <br />
+      <input type="text" id="adress" />
+      <label for="adress">Full adresse</label> <br />
+    </section>
+
+    <section>
+      <h2>Ekstra infromasjonen</h2>
+      <input type="text" id="extras" />
+      <label for="extras">Er det noe ekstra du ønsker?</label>
+    </section>
+    <br />
+
+    <button onclick="checkInputs()">Bestill nå</button>
+
+    <script src="order.js" async defer></script>
+  </body>
+</html>
